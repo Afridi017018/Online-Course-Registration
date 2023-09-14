@@ -21,7 +21,8 @@ const handleSelect = (e)=>{
    if(!cartData.includes(e.courseName) && (totalCredit + e.credit > 20 || remainingCredit - e.credit < 0))
    {
     toast.dismiss();
-    toast.warn("The credit hour limit exceeds")
+    toast.warn("The maximum credit hour limit exceeds")
+    toast.warn("Credit hour cannot be less than 0")
    }
     
    else
