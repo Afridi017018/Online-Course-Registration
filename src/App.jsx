@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import Card from "./components/Card/Card";
+import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
 
 
@@ -23,7 +24,9 @@ function App() {
      <Card />
      </div>
 
-    
+    <div>
+      <Cart />
+    </div>
 
      </div>
     
