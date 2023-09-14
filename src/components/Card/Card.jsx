@@ -6,12 +6,14 @@ import { BiDollar, BiBookOpen } from "react-icons/bi";
 
 import PropTypes from 'prop-types';
 
-const Card = ({element, cartData, setCartData}) => {
+const Card = ({element, cartData, setCartData, totalCredit, setTotalCredit, remainingCredit, setRemainingCredit}) => {
 
 
 const handleSelect = (e)=>{
 
-    cartData.includes(e.courseName) || setCartData([...cartData, e.courseName])
+    cartData.includes(e.courseName) || setCartData([...cartData, e.courseName]);
+    setTotalCredit(totalCredit + e.credit);
+    setRemainingCredit(remainingCredit - e.credit);
 }
    
     return (
@@ -52,6 +54,10 @@ Card.propTypes = {
     }).isRequired,
     cartData: PropTypes.arrayOf(PropTypes.string).isRequired,
     setCartData: PropTypes.func.isRequired,
+    totalCredit: PropTypes.number.isRequired,
+    setTotalCredit: PropTypes.func.isRequired,
+    remainingCredit: PropTypes.number.isRequired,
+    setRemainingCredit: PropTypes.func.isRequired,
   };
 
 export default Card;

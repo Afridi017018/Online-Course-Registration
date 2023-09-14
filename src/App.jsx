@@ -9,6 +9,8 @@ import fakeData from "./FakeData/fakeData.json"
 function App() {
 
   const [cartData, setCartData] = useState([]);
+  const [totalCredit, setTotalCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
 
   return (
     <>
@@ -20,7 +22,15 @@ function App() {
      {
       fakeData.map((element,index)=>(
         <div key= {index+1}>
-          <Card element ={element} cartData={cartData} setCartData={setCartData} />
+          <Card 
+          element ={element} 
+          cartData={cartData} 
+          setCartData={setCartData} 
+          totalCredit ={totalCredit}
+          setTotalCredit={setTotalCredit}
+          remainingCredit={remainingCredit}
+          setRemainingCredit={setRemainingCredit}
+          />
      
         </div>
       ))
@@ -28,7 +38,7 @@ function App() {
      </div>
 
     <div>
-      <Cart cartData={cartData} />
+      <Cart cartData={cartData} totalCredit ={totalCredit} remainingCredit={remainingCredit} />
     </div>
 
      </div>
