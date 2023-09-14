@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Card from "./components/Card/Card";
 import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
@@ -8,24 +8,27 @@ import fakeData from "./FakeData/fakeData.json"
 
 function App() {
 
-  useEffect(()=>{
-    console.log(fakeData[0].image);
-  }, [])
+  const [cartData, setCartData] = useState([]);
 
   return (
     <>
     <div className="container mx-auto">
     <Header />
 
-     <div className="flex">
-     <div className="grid grid-cols-3">
-     <Card />
-     <Card />
-     <Card />
+     <div className="flex gap-5">
+     <div className="grid grid-cols-3 gap-5 mb-10">
+     {
+      fakeData.map((element,index)=>(
+        <div key= {index+1}>
+          <Card element ={element} cartData={cartData} setCartData={setCartData} />
+     
+        </div>
+      ))
+     }
      </div>
 
     <div>
-      <Cart />
+      <Cart cartData={cartData} />
     </div>
 
      </div>

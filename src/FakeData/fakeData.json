@@ -8,7 +8,7 @@
     },
     {
       "image": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?size=626&ext=jpg",
-      "courseName": "Web Development Fundamentals",
+      "courseName": "Web Development",
       "credit": 4,
       "price": 12000,
       "courseDetails": "Explore the essentials of web development, including HTML, CSS, JavaScript, and responsive design principles."
@@ -36,7 +36,7 @@
     },
     {
       "image": "https://img.freepik.com/premium-photo/clever-girl-standing-by-blackboard-pointing-robot-while-making-presentation-his-characteristics-her-classmates-seminar_274679-12153.jpg?size=626&ext=jpg",
-      "courseName": "Artificial Intelligence Fundamentals",
+      "courseName": "Artificial Intelligence",
       "credit": 4,
       "price": 6500,
       "courseDetails": "Discover the core concepts of artificial intelligence, neural networks, and natural language processing in this in-depth course."
@@ -57,10 +57,10 @@
     },
     {
       "image": "https://img.freepik.com/free-photo/table-laptop-showing-charts-conference-room-business-people-having-important-discussion_482257-27897.jpg?size=626&ext=jpg",
-      "courseName": "Business Analytics for Decision-Making",
+      "courseName": "Business Analytics",
       "credit": 4,
       "price": 8500,
-      "courseDetails": "Learn how to analyze data for informed decision-making in business, covering statistical methods and data visualization tools."
+      "courseDetails": "Learn how to analyze data for informed decision-making in business, covering statistical methods."
     }
   ]
 
