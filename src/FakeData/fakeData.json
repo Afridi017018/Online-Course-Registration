@@ -1,0 +1,69 @@
+[
+    {
+      "image": "https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?size=626&ext=jpg",
+      "courseName": "Introduction to Programming",
+      "credit": 3,
+      "price": 5000,
+      "courseDetails": "This introductory course covers the basics of programming, including coding concepts and problem-solving techniques."
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?size=626&ext=jpg",
+      "courseName": "Web Development Fundamentals",
+      "credit": 4,
+      "price": 12000,
+      "courseDetails": "Explore the essentials of web development, including HTML, CSS, JavaScript, and responsive design principles."
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/people-using-digital-device-while-meeting_23-2149085923.jpg?size=626&ext=jpg",
+      "courseName": "Data Science for Beginners",
+      "credit": 3,
+      "price": 7000,
+      "courseDetails": "An introductory course to data science using Python, covering data analysis, visualization, and basic machine learning concepts."
+    },
+    {
+      "image": "https://img.freepik.com/free-vector/template-landing-page-artificial-intelligence_23-2148359196.jpg?size=626&ext=jpg",
+      "courseName": "Machine Learning Essentials",
+      "credit": 4,
+      "price": 6000,
+      "courseDetails": "Get started with machine learning, explore algorithms, and build predictive models in this comprehensive course."
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/notebook-with-words-digital-marketing_1134-436.jpg?size=626&ext=jpg",
+      "courseName": "Digital Marketing Mastery",
+      "credit": 3,
+      "price": 9500,
+      "courseDetails": "Master digital marketing techniques including SEO, social media strategies, and email marketing in this hands-on course."
+    },
+    {
+      "image": "https://img.freepik.com/premium-photo/clever-girl-standing-by-blackboard-pointing-robot-while-making-presentation-his-characteristics-her-classmates-seminar_274679-12153.jpg?size=626&ext=jpg",
+      "courseName": "Artificial Intelligence Fundamentals",
+      "credit": 4,
+      "price": 6500,
+      "courseDetails": "Discover the core concepts of artificial intelligence, neural networks, and natural language processing in this in-depth course."
+    },
+    {
+      "image": "https://img.freepik.com/free-vector/landing-page-website_23-2147778136.jpg?size=626&ext=jpg",
+      "courseName": "Mobile App Development",
+      "credit": 3,
+      "price": 11000,
+      "courseDetails": "Learn how to create mobile apps for iOS and Android platforms using popular development tools and frameworks."
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/man-working-banner-network-graphic-overlay-floor_53876-121141.jpg?size=626&ext=jpg",
+      "courseName": "Cybersecurity Fundamentals",
+      "credit": 3,
+      "price": 9900,
+      "courseDetails": "Gain essential cybersecurity skills, including threat detection, network security, and ethical hacking techniques."
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/table-laptop-showing-charts-conference-room-business-people-having-important-discussion_482257-27897.jpg?size=626&ext=jpg",
+      "courseName": "Business Analytics for Decision-Making",
+      "credit": 4,
+      "price": 8500,
+      "courseDetails": "Learn how to analyze data for informed decision-making in business, covering statistical methods and data visualization tools."
+    }
+  ]
+
+
+  
+
