@@ -13,6 +13,7 @@ function App() {
   const [cartData, setCartData] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
   const [remainingCredit, setRemainingCredit] = useState(20);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
 
@@ -54,6 +55,8 @@ function App() {
                     setTotalCredit={setTotalCredit}
                     remainingCredit={remainingCredit}
                     setRemainingCredit={setRemainingCredit}
+                    totalPrice={totalPrice}
+                    setTotalPrice={setTotalPrice}
                   />
 
                 </div>
@@ -62,7 +65,12 @@ function App() {
           </div>
 
           <div>
-            <Cart cartData={cartData} totalCredit={totalCredit} remainingCredit={remainingCredit} />
+            <Cart 
+            cartData={cartData} 
+            totalCredit={totalCredit} 
+            remainingCredit={remainingCredit} 
+            totalPrice={totalPrice} 
+            />
           </div>
 
         </div>

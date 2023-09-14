@@ -2,7 +2,19 @@ import { BiDollar, BiBookOpen } from "react-icons/bi";
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 
-const Card = ({element, cartData, setCartData, totalCredit, setTotalCredit, remainingCredit, setRemainingCredit}) => {
+const Card = (
+    {
+        element, 
+        cartData, 
+        setCartData, 
+        totalCredit, 
+        setTotalCredit, 
+        remainingCredit, 
+        setRemainingCredit,
+        totalPrice,
+        setTotalPrice
+    }
+    ) => {
 
 
 const handleSelect = (e)=>{
@@ -18,6 +30,7 @@ const handleSelect = (e)=>{
     cartData.includes(e.courseName) ? toast.warn("This item has already been selected") : setCartData([...cartData, e.courseName]);
     cartData.includes(e.courseName) || setTotalCredit(totalCredit + e.credit);
     cartData.includes(e.courseName) || setRemainingCredit(remainingCredit - e.credit);
+    cartData.includes(e.courseName) || setTotalPrice(totalPrice + e.price);
    }
 }
    
@@ -63,6 +76,8 @@ Card.propTypes = {
     setTotalCredit: PropTypes.func.isRequired,
     remainingCredit: PropTypes.number.isRequired,
     setRemainingCredit: PropTypes.func.isRequired,
+    totalPrice: PropTypes.number.isRequired,
+    setTotalPrice: PropTypes.func.isRequired,
   };
 
 export default Card;
