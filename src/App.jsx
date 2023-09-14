@@ -41,8 +41,8 @@ function App() {
       <div className="container mx-auto">
         <Header />
 
-        <div className="flex gap-5">
-          <div className="grid grid-cols-3 gap-5 mb-10">
+        <div className="lg:flex lg:flex-row lg:items-start gap-5 flex flex-col items-center justify-center mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {
               fakeData.map((element, index) => (
                 <div key={index + 1}>
