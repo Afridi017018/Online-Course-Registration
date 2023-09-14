@@ -1,4 +1,4 @@
-# Course Registration
+# Online Course Registration
 
 ## Features
 
