@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import Header from "./components/Header/Header";
 
 
 import fakeData from "./FakeData/fakeData.json"
@@ -11,9 +12,15 @@ function App() {
 
   return (
     <>
-    <h1>hi</h1>
+    <div className="container mx-auto">
+    <Header />
+
+     
+    
+    </div>
     </>
   )
+  
 }
 
 export default App
