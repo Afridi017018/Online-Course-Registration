@@ -30,7 +30,7 @@
     {
       "image": "https://img.freepik.com/free-photo/notebook-with-words-digital-marketing_1134-436.jpg?size=626&ext=jpg",
       "courseName": "Digital Marketing Mastery",
-      "credit": 3,
+      "credit": 1,
       "price": 9500,
       "courseDetails": "Master digital marketing techniques including SEO, social media strategies, and email marketing in this hands-on course."
     },
@@ -44,7 +44,7 @@
     {
       "image": "https://img.freepik.com/free-vector/landing-page-website_23-2147778136.jpg?size=626&ext=jpg",
       "courseName": "Mobile App Development",
-      "credit": 3,
+      "credit": 2,
       "price": 11000,
       "courseDetails": "Learn how to create mobile apps for iOS and Android platforms using popular development tools and frameworks."
     },

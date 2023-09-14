@@ -1,19 +1,24 @@
-
 import { BiDollar, BiBookOpen } from "react-icons/bi";
-
-
-
-
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 
 const Card = ({element, cartData, setCartData, totalCredit, setTotalCredit, remainingCredit, setRemainingCredit}) => {
 
 
 const handleSelect = (e)=>{
-
-    cartData.includes(e.courseName) || setCartData([...cartData, e.courseName]);
-    setTotalCredit(totalCredit + e.credit);
-    setRemainingCredit(remainingCredit - e.credit);
+   if(!cartData.includes(e.courseName) && (totalCredit + e.credit > 20 || remainingCredit - e.credit < 0))
+   {
+    toast.dismiss();
+    toast.warn("The credit hour limit exceeds")
+   }
+    
+   else
+   {
+    toast.dismiss();
+    cartData.includes(e.courseName) ? toast.warn("This item has already been selected") : setCartData([...cartData, e.courseName]);
+    cartData.includes(e.courseName) || setTotalCredit(totalCredit + e.credit);
+    cartData.includes(e.courseName) || setRemainingCredit(remainingCredit - e.credit);
+   }
 }
    
     return (
